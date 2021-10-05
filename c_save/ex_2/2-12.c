@@ -27,7 +27,8 @@ int main(void){
         printf("years: "); scanf("%d", &year);
         printf("month: "); scanf("%d", &month);
         printf("day: "); scanf("%d", &day);
-        printf("%d년의 %d일째입니다.", year, dayofyear(year, month, day));
+        printf("%d년의 %d일째입니다.\n", year, dayofyear(year, month, day));
+        printf("%d년은 %d일 남았습니다.", year, 365 - dayofyear(year,month, day));
         printf("return 1: yes/ 2: no : ");
         scanf("%d", &retry);
     }while(retry==1);
